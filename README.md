@@ -16,7 +16,7 @@
       
         --name my-localhost-container: đặt tên cho container được tạo (tên tùy ý, ở đây là "my-localhost-container").
       
-        -p 8080:80 ánh xạ cổng giao tiếp giữa client và server, ở đây là cổng 8080 máy tính chạy Docker và cổng 80 của container, khi ta gửi yêu cầu đến cổng 8080 trên máy chủ sẽ được chuyển tiếp đến cổng 80 của container.
+        -p 8080:80 ánh xạ cổng giao tiếp giữa host và container, ở đây là cổng 8080 máy tính host Docker container và cổng 80 của container, khi ta gửi yêu cầu đến cổng 8080 trên máy chủ sẽ được chuyển tiếp đến cổng 80 của container.
       
         phucvhhy212/my-localhost-image:v1.0.0 là tên image vừa được tải về
 3. Sau khi container đã được chạy thành công, truy cập http://localhost:8080.
